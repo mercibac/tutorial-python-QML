@@ -2,13 +2,14 @@
 # -*- coding: utf-8 -*-
  
 import sys
-from PySide.QtCore import *
-from PySide.QtGui import *
-from PySide.QtDeclarative import QDeclarativeView
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import QApplication
+from PySide2.QtQuick import QQuickView
  
 # Create Qt application and the QDeclarative view
 app = QApplication(sys.argv)
-view = QDeclarativeView()
+view = QQuickView()
 # Create an URL to the QML file
 url = QUrl('message.qml')
 # Set the QML file and show
